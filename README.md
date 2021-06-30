@@ -8,21 +8,19 @@ CONTENTS OF THIS FILE
 5. Project Execution Steps
 
 1. Purpose of the Project
-     The proposed system aims to predict the soil fertility for better yield production or vegetation cover.To be precise and accurate in predicting fertility, the project analyses the 
-nutrient contents present in the soil.With this, we can reduce the human effort in the industrial sector where they predict the quality of the soil.
+     The proposed system aims to predict the soil fertility for better yield production or vegetation cover.To be precise and accurate in predicting fertility, the project analyses the nutrient contents present in the soil.With this, we can reduce the human effort in the industrial sector where they predict the quality of the soil.
 
 2. Software files
-     In this project we need NumPy,pandas,sikit-learn,Google Collaboratory and flask.We need to install NumPy,pandas,sikit-learn and flask in your system before starting up with the 
-project.We can use the Google Collaboratory directly through the browser without any installation.
+     In this project we need NumPy,pandas,sikit-learn,Google Collaboratory and flask.We need to install NumPy,pandas,sikit-learn and flask in your system before starting up with the project.We can use the Google Collaboratory directly through the browser without any installation.
 
 3. Project files
-    The project files are:
-	•	Soil_Fertility_Prediction.ipynb
-	•	proj.py
-	•	ProjectHomePage.html
-	•	dataset.txt
-	•	soil_data.xlsx
-	•	preprocessed_data.csv
+The project files are:
+i) Soil_Fertility_Prediction.ipynb
+ii) proj.py
+iii) ProjectHomePage.html
+iv) dataset.txt
+v) soil_data.xlsx
+vi) preprocessed_data.csv
 
 4. Important links
     The below links are used for finding installation commands.
