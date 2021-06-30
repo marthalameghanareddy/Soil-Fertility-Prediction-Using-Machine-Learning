@@ -58,7 +58,7 @@ In this project we need NumPy,pandas,sikit-learn,Google Collaboratory and flask.
 ***
 The project files are:
 * Soil_Fertility_Prediction.ipynb
-* proj.py
+* project.py
 * ProjectHomePage.html
 * dataset.txt
 * soil_data.xlsx
@@ -73,7 +73,7 @@ The below links are used for finding installation commands.
 * Flask - https://flask.palletsprojects.com/en/2.0.x/installation/
 * Google Collaboratory - https://research.google.com/colaboratory/
 
-### 6. Project Execution Steps Step
+### 6. Project Execution Steps
 ***
    1. Create a folder and place dataset.txt,proj.py files in it.
    2. Create a folder with name templates in the folder where we placed dataset.txt,proj files.
