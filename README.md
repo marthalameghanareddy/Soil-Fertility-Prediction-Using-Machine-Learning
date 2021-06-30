@@ -25,21 +25,21 @@ In this project we need NumPy,pandas,sikit-learn,Google Collaboratory and flask.
 ### 3. Project files
 ***
 The project files are:
-* [Soil_Fertility_Prediction.ipynb](#colab-notebook)
-* [proj.py](#proj.py)
-* [ProjectHomePage.html](#project-home-page)
-* [dataset.txt](#dataset)
-* [soil_data.xlsx](#soil-data)
-* [preprocessed_data.csv](#preprocessed-data)
+* Soil_Fertility_Prediction.ipynb
+* proj.py
+* ProjectHomePage.html
+* dataset.txt
+* soil_data.xlsx
+* preprocessed_data.csv
 
 ### 4. Important links
 ***
 The below links are used for finding installation commands.
-* [NumPy - https://numpy.org/install/](#numpy-installation-link)
-* [Pandas - https://pandas.pydata.org/pandas-docs/stable/getting_started/install.html](#pandas-installation-link)
-* [scikit-learn- https://scikit-learn.org/stable/install.html](#sikit-learn-installation-link)
-* [Flask - https://flask.palletsprojects.com/en/2.0.x/installation/](#flask-installation-link)
-* [Google Collaboratory - https://research.google.com/colaboratory/](#colab-notebook)
+* NumPy - https://numpy.org/install/
+* Pandas - https://pandas.pydata.org/pandas-docs/stable/getting_started/install.html
+* scikit-learn- https://scikit-learn.org/stable/install.html
+* Flask - https://flask.palletsprojects.com/en/2.0.x/installation/
+* Google Collaboratory - https://research.google.com/colaboratory/
 
 ### 5. Project Execution Steps Step
 ***
