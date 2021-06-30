@@ -75,10 +75,10 @@ The below links are used for finding installation commands.
 
 ### 6. Project Execution Steps
 ***
-   1. Create a folder and place dataset.txt,proj.py files in it.
-   2. Create a folder with name templates in the folder where we placed dataset.txt,proj files.
+   1. Create a folder and place dataset.txt,project.py files in it.
+   2. Create a folder with name templates in the folder where we placed dataset.txt,project files.
    3. Place the ProjectHomePage.html file in templates folder.
-   4. Select proj.py file--> Right click on proj.py file --> select open with --> click Python.
+   4. Select project.py file--> Right click on project.py file --> select open with --> click Python.
    5. Python terminal will be opened and a url will be displayed.
    6. Copy and paste that url in your browser and press enter the webpage will be opened.
    7. Enter the 14 nutrient values in the webpage and click on predict button.
