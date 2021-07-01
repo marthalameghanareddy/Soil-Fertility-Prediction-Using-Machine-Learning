@@ -45,7 +45,7 @@ def soilfertility():
 
     X_train, X_test, Y_train, Y_test = train_test_split(X,Y, test_size=0.10, random_state=43)
 
-    forestRegressor = RandomForestRegressor(criterion='mse', max_depth=7, n_estimators=10, random_state=0)
+    forestRegressor = RandomForestRegressor(criterion='mse', max_depth=8, n_estimators=10, random_state=0)
     forestRegressor.fit(X_train, Y_train)
     y_pred = forestRegressor .predict(X_test)
     prediction = forestRegressor .predict(l1)
