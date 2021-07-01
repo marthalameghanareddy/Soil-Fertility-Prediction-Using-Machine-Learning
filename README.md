@@ -79,7 +79,7 @@ The below links are used for finding installation commands.
    2. Create a folder with name templates in the folder where we placed dataset.txt,project files.
    3. Place the ProjectHomePage.html file in templates folder.
    4. Select project.py file--> Right click on project.py file --> select open with --> click Python.
-   5. Python terminal will be opened and a url will be displayed.
-   6. Copy and paste that url in your browser and press enter the webpage will be opened.
+   5. Python terminal will be opened and a url will be displayed .
+   6. Copy and paste that url "http://127.0.0.1:5000/" in your browser and press enter the webpage will be opened.
    7. Enter the 14 nutrient values in the webpage and click on predict button.
    8. The result will be displayed in the webpage.
