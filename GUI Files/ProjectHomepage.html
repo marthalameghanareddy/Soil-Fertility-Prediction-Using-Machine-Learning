@@ -2,9 +2,34 @@
 <html >
 <head>
   <title>Soil Fertility Prediction</title>
-</head>
 <style>
-  
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  margin-left:-5px;
+  margin-right:-5px;
+}
+
+.column {
+  flex: 50%;
+  padding: 5px;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+
 body { 
   background: #732025;
   color: #fff;
@@ -30,6 +55,7 @@ input {
   column-count: 2;
 }
 </style>
+</head>
 <body>
 	<h1><center>Predict Soil Fertility</center></h1>
 
@@ -37,23 +63,23 @@ input {
 
     <form action="{{ url_for('soilfertility')}}"method="post">
     <div class = "class1" >
-      <input type="number" name="0" placeholder="NO3(ppm)" required="required" size="50" step="any" title="please enter numbers only"/><br>
-      <input type="number" name="1" placeholder="NH4(ppm)" required="required" size="50" step="any" title="please enter numbers only"/><br>
-      <input type="number" name="2" placeholder="P(ppm)" required="required" size="50" step="any" title="please enter number greater than 0"/><br>
-      <input type="number" name="3" placeholder="SO4(ppm)" required="required" size="50" step="any" title="please enter numbers only"/><br>
-      <input type="number" name="4" placeholder="K(ppm)" required="required" size="50" step="any" title="please enter numbers only"/><br>
-      <input type="number" name="5" placeholder="B(ppm)" required="required" size="50" step="any" title="please enter numbers only"/><br>
-      <input type="number" name="6" placeholder="Organic Matter(%age)" required="required" size="50" step="any" title="please enter numbers only"/><br>
-      <input type="number" name="7" placeholder="pH(pH)" required="required" size="50" step="any" title="please enter numbers only"/><br>
-      <input type="number" name="8" placeholder="Zn(ppm)" required="required" size="50" step="any" title="please enter numbers only"/><br>
-      <input type="number" name="9" placeholder="Cu(ppm)" required="required" size="50" step="any" title="please enter numbers only"/><br>
-      <input type="number" name="10" placeholder="Fe(ppm)" required="required" size="50" step="any" title="please enter numbers only"/><br>
-      <input type="number" name="11" placeholder="Ca(meq/100g)" required="required" size="50" step="any" title="please enter numbers only"/><br>
-      <input type="number" name="12" placeholder="Mg(meq/100g)" required="required" size="50" step="any" title="please enter numbers only"/><br>
-      <input type="number" name="13" placeholder="Na(meq/100g)" required="required" size="50" step="any" title="please enter numbers only"/><br>
+      <input type="text" name="0" placeholder="NO3(ppm)" required="required" size="50" pattern="^\d*(\.\d{0,2})?$" title="please enter numbers only"/><br>
+      <input type="text" name="1" placeholder="NH4(ppm)" required="required" size="50" pattern="^\d*(\.\d{0,2})?$" title="please enter numbers only"/><br>
+      <input type="text" name="2" placeholder="P(ppm)" required="required" size="50" pattern="^\d*(\.\d{0,2})?$" title="please enter numbers only"/><br>
+      <input type="text" name="3" placeholder="SO4(ppm)" required="required" size="50" pattern="^\d*(\.\d{0,2})?$" title="please enter numbers only"/><br>
+      <input type="text" name="4" placeholder="K(ppm)" required="required" size="50" pattern="^\d*(\.\d{0,2})?$" title="please enter numbers only"/><br>
+      <input type="text" name="5" placeholder="B(ppm)" required="required" size="50" pattern="^\d*(\.\d{0,2})?$" title="please enter numbers only"/><br>
+      <input type="text" name="6" placeholder="Organic Matter(%age)" required="required" size="50" pattern="^\d*(\.\d{0,2})?$" title="please enter numbers only"/><br>
+      <input type="text" name="7" placeholder="pH(pH)" required="required" size="50" pattern="^\d*(\.\d{0,2})?$" title="please enter numbers only"/><br>
+      <input type="text" name="8" placeholder="Zn(ppm)" required="required" size="50" pattern="^\d*(\.\d{0,2})?$" title="please enter numbers only"/><br>
+      <input type="text" name="9" placeholder="Cu(ppm)" required="required" size="50" pattern="^\d*(\.\d{0,2})?$" title="please enter numbers only"/><br>
+      <input type="text" name="10" placeholder="Fe(ppm)" required="required" size="50" pattern="^\d*(\.\d{0,2})?$" title="please enter numbers only"/><br>
+      <input type="text" name="11" placeholder="Ca(meq/100g)" required="required" size="50" pattern="^\d*(\.\d{0,2})?$" title="please enter numbers only"/><br>
+      <input type="text" name="12" placeholder="Mg(meq/100g)" required="required" size="50" pattern="^\d*(\.\d{0,2})?$" title="please enter numbers only"/><br>
+      <input type="text" name="13" placeholder="Na(meq/100g)" required="required" size="50" pattern="^\d*(\.\d{0,2})?$" title="please enter numbers only"/><br>
     </div>
       <button type="submit">Predict</button>
     </form>
-    <h2><center>Soil Fertility is (In percentage): {{prediction_text}}</center></h2>
+</div>
 </body>
 </html>

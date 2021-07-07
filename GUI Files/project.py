@@ -16,6 +16,7 @@ def home():
 
 @app.route('/soilfertility',methods=['POST'])
 def soilfertility():
+    
     a0=float(request.form['0'])
     a1=float(request.form['1'])
     a2 =float(request.form['2'])
@@ -50,8 +51,25 @@ def soilfertility():
     y_pred = forestRegressor .predict(X_test)
     prediction = forestRegressor .predict(l1)
     print(l1)
+    text=""
+    if(prediction<90):
+        if(a0<12.75 or a2<47 or a8<0.6 or a3<15 or a6<0.28 or a10<1):
+            text="Your Soil is less fertile.You may try increasing these nutrients "
+        if(a0<12.75):
+            text=text+"NO3 "
+        if(a2<47):
+            text=text+"P "
+        if(a8<0.6):
+            text=text+"Zn "
+        if(a3<15):
+            text=text+"K "
+        if(a6<0.28):
+            text=text+"Organic Matter "
+        if(a10<1):
+            text=text+"Fe "
+    if(prediction>=90):
+        text="Your soil is high fertile."		
     if(prediction>0 and prediction<1):
-        return render_template('ProjectHomepage.html',prediction_text=np.round(prediction*100))
-
+        return render_template('Results.html',content=text,prediction_text=np.round(prediction*100).astype(int))
 if __name__ == "__main__":
     app.run(debug=True)
